@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./SiteHeader.module.css";
+import { withBasePath } from "@/lib/paths";
 
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,7 @@ export default function SiteHeader() {
       <div className={styles.inner}>
         <Link href="/" className={styles.brand}>
           <Image
-            src="/bu-logo.svg"
+            src={withBasePath("/bu-logo.svg")}
             alt="实验室标志"
             width={42}
             height={42}

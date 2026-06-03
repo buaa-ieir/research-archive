@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getReviewsByLanguage, type ReviewMeta } from "@/lib/reviews";
 import styles from "./archive.module.css";
+import { withBasePath } from "@/lib/paths";
 
 export const metadata = {
   title: "论文档案 | 实验室论文阅读档案",
@@ -83,7 +84,7 @@ function ReviewCard({ review }: { review: ReviewMeta }) {
       {review.cover_image ? (
         <Link href={`/archive/${review.slug}`} className={styles.thumbLink}>
           <img
-            src={review.cover_image}
+            src={withBasePath(review.cover_image)}
             alt={review.title}
             className={styles.thumbnail}
           />

@@ -119,8 +119,11 @@ export default async function MemberPage({ params }: PageProps) {
           {/* <ReactMarkdown>{member.content}</ReactMarkdown> */}
           <ReactMarkdown
             components={{
-              img: ({ src = "", alt = "" }) => (
-                <img src={withBasePath(src)} alt={alt} />
+              img: ({ src, alt }) => (
+                <img
+                  src={withBasePath(src)}
+                  alt={typeof alt === "string" ? alt : ""}
+                />
               ),
             }}
           >

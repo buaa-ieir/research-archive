@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getReviewsByLanguage, type ReviewMeta } from "@/lib/reviews";
 import styles from "./page.module.css";
+import { withBasePath } from "@/lib/paths";
 
 export default function HomePage() {
   const zhReviews = getReviewsByLanguage("zh").slice(0, 3);
@@ -61,7 +62,7 @@ function ReviewSection({
             <article key={review.slug} className={styles.card}>
               {review.cover_image && (
                 <img
-                  src={review.cover_image}
+                  src={withBasePath(review.cover_image)}
                   alt={review.title}
                   className={styles.coverImage}
                 />

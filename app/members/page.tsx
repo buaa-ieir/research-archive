@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllMembers } from "@/lib/members";
 import styles from "./members.module.css";
+import { withBasePath } from "@/lib/paths";
 
 export const metadata = {
   title: "成员 | 实验室论文阅读档案",
@@ -31,7 +32,7 @@ export default function MembersPage() {
             <div className={styles.photoWrap}>
               {member.photo ? (
                 <Image
-                  src={member.photo}
+                  src={withBasePath(member.photo)}
                   alt={member.name}
                   width={120}
                   height={120}

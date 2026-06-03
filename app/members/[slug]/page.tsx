@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getMemberBySlug, getMemberSlugs } from "@/lib/members";
 import { getReviewsByPresenterSlug } from "@/lib/reviews";
 import styles from "./member.module.css";
+import { withBasePath } from "@/lib/paths";
 
 type PageProps = {
   params: Promise<{
@@ -58,7 +59,7 @@ export default async function MemberPage({ params }: PageProps) {
         <div className={styles.photoWrap}>
           {member.photo ? (
             <Image
-              src={member.photo}
+              src={withBasePath(member.photo)}
               alt={member.name}
               width={220}
               height={220}

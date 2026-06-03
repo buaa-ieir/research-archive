@@ -116,7 +116,16 @@ export default async function MemberPage({ params }: PageProps) {
 
       {member.content && (
         <section className={styles.bio}>
-          <ReactMarkdown>{member.content}</ReactMarkdown>
+          {/* <ReactMarkdown>{member.content}</ReactMarkdown> */}
+          <ReactMarkdown
+            components={{
+              img: ({ src = "", alt = "" }) => (
+                <img src={withBasePath(src)} alt={alt} />
+              ),
+            }}
+          >
+            {member.content}
+          </ReactMarkdown>
         </section>
       )}
 

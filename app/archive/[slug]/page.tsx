@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { notFound } from "next/navigation";
 import { getReviewBySlug, getReviewSlugs } from "@/lib/reviews";
 import styles from "./review.module.css";
+import { withBasePath } from "@/lib/paths";
 
 type PageProps = {
   params: Promise<{
@@ -132,7 +133,16 @@ export default async function ReviewPage({ params }: PageProps) {
         </header>
 
         <section className={styles.body}>
-          <ReactMarkdown>{review.content}</ReactMarkdown>
+          {/* <ReactMarkdown>{review.content}</ReactMarkdown> */}
+          <ReactMarkdown
+            components={{
+              img: ({ src = "", alt = "" }) => (
+                <img src={withBasePath(src)} alt={alt} />
+              ),
+            }}
+          >
+            {review.content}
+          </ReactMarkdown>
         </section>
       </article>
     </main>

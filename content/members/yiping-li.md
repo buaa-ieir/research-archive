@@ -1,7 +1,7 @@
 ---
 name: "李一平"
 role: "博士研究生"
-photo: "/members/yiping-li.jpg"
+photo: "/members/yiping-li.png"
 description: "研究方向包括机器人自主建图及导航、机器人移动操作。"
 email: "yiping_li@buaa.edu.cn"
 website: ""

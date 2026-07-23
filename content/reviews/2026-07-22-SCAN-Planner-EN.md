@@ -4,7 +4,7 @@ date: "2026-07-22"
 presenter: "Fangyuan Zhang"
 presenter_slug: "fangyuan_zhang"
 language: "en"
-cover_image: "/reviews/2026-07-22-SCAN-Planner-EN/cover.png"
+cover_image: "/reviews/2026-07-22-SCAN-Planner/cover.png"
 paper_title: "SCAN-Planner: Spatial Collision-Aware Local Planning for Route-Guided Long-Range Quadruped Navigation"
 authors:
   - "Han Zheng"

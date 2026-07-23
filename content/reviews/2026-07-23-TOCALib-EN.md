@@ -1,10 +1,10 @@
 ---
 title: "TOCALib: An Optimal-Control Trajectory Library for Bimanual Manipulation and Obstacle Avoidance"
 date: "2026-07-23"
-presenter: "Fangyuan Zhang"
-presenter_slug: "fangyuan_zhang"
+presenter: "Yiping Li"
+presenter_slug: "yiping_li"
 language: "en"
-cover_image: "/reviews/2026-07-23-TOCALib-EN/cover.png"
+cover_image: "/reviews/2026-07-23-TOCALib/cover.png"
 paper_title: "TOCALib: Optimal Control Library with Interpolation for Bimanual Manipulation and Obstacles Avoidance"
 authors:
   - "Yulia Danik"

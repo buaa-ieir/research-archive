@@ -4,7 +4,7 @@ date: "2026-07-22"
 presenter: "Fangyuan Zhang"
 presenter_slug: "fangyuan_zhang"
 language: "en"
-cover_image: "/reviews/2026-07-22-DreamWaQ-EN/cover.png"
+cover_image: "/reviews/2026-07-22-DreamWaQ/cover.png"
 paper_title: "DreamWaQ: Learning Robust Quadrupedal Locomotion With Implicit Terrain Imagination via Deep Reinforcement Learning"
 authors:
   - "I Made Aswin Nahrendra"

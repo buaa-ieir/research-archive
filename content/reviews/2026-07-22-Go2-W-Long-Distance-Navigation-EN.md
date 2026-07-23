@@ -4,7 +4,7 @@ date: "2026-07-22"
 presenter: "Fangyuan Zhang"
 presenter_slug: "fangyuan_zhang"
 language: "en"
-cover_image: "/reviews/2026-07-22-Go2-W-Long-Distance-Navigation-EN/cover.png"
+cover_image: "/reviews/2026-07-22-Go2-W-Long-Distance-Navigation/cover.png"
 paper_title: "Long-Distance Real-World Navigation of the Legged-Wheeled Robot Go2-W Using Deep Reinforcement Learning"
 authors:
   - "Takaaki Matsuzawa"

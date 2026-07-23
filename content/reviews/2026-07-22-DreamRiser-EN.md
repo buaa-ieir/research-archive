@@ -4,7 +4,7 @@ date: "2026-07-22"
 presenter: "Fangyuan Zhang"
 presenter_slug: "fangyuan_zhang"
 language: "en"
-cover_image: "/reviews/2026-07-22-DreamRiser-EN/cover.png"
+cover_image: "/reviews/2026-07-22-DreamRiser/cover.png"
 paper_title: "Robust Recovery Motion Control for Quadrupedal Robots via Learned Terrain Imagination"
 authors:
   - "I Made Aswin Nahrendra"

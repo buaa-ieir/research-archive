@@ -4,7 +4,7 @@ date: "2026-07-24"
 presenter: "Jingyu Xu"
 presenter_slug: "jingyu_xu"
 language: "en"
-cover_image: "/reviews/2026-07-24-Hiking-in-the-Wild-EN/cover.png"
+cover_image: "/reviews/2026-07-24-Hiking-in-the-Wild/cover.png"
 paper_title: "Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids"
 authors:
   - "Shaoting Zhu"

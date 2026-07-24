@@ -4,7 +4,7 @@ date: "2026-07-24"
 presenter: "Jingyu Xu"
 presenter_slug: "jingyu_xu"
 language: "en"
-cover_image: "/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion-EN/cover.png"
+cover_image: "/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion/cover.png"
 paper_title: "Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking"
 authors:
   - "Zewei Zhang"

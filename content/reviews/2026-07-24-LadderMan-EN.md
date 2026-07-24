@@ -4,7 +4,7 @@ date: "2026-07-24"
 presenter: "Jingyu Xu"
 presenter_slug: "jingyu_xu"
 language: "en"
-cover_image: "/reviews/2026-07-24-LadderMan-EN/cover.png"
+cover_image: "/reviews/2026-07-24-LadderMan/cover.png"
 paper_title: "LadderMan: Learning Humanoid Perceptive Ladder Climbing"
 authors:
   - "Siheng Zhao"

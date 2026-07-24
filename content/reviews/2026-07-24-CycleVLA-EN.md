@@ -4,7 +4,7 @@ date: "2026-07-24"
 presenter: "Yuanzhen Niu"
 presenter_slug: "yuanzhen_niu"
 language: "en"
-cover_image: "/reviews/2026-07-24-CycleVLA-EN/cover.png"
+cover_image: "/reviews/2026-07-24-CycleVLA/cover.png"
 paper_title: "CycleVLA: Proactive Self-Correcting Vision-Language-Action Models via Subtask Backtracking and Minimum Bayes Risk Decoding"
 authors:
   - "Chenyang Ma"

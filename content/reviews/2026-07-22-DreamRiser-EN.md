@@ -31,7 +31,7 @@ DreamRiser applies implicit terrain imagination to fall recovery, allowing one r
 
 ## Problem addressed
 
-![Failure and DreamRiser-enabled recovery of a fallen quadruped.](/reviews/2026-07-22-DreamRiser-EN/fig1-recovery-overview.png)
+![Failure and DreamRiser-enabled recovery of a fallen quadruped.](/reviews/2026-07-22-DreamRiser/fig1-recovery-overview.png)
 
 *Figure 1. Failure and DreamRiser-enabled recovery of a fallen quadruped.*
 
@@ -54,7 +54,7 @@ The reward includes base uprightness, foot contact, joint acceleration, joint po
 
 ## Experimental setup
 
-![Real-robot recovery sequences on deformable, cluttered, outdoor, and payload-perturbed settings.](/reviews/2026-07-22-DreamRiser-EN/fig2-terrain-adaptive-recovery.png)
+![Real-robot recovery sequences on deformable, cluttered, outdoor, and payload-perturbed settings.](/reviews/2026-07-22-DreamRiser/fig2-terrain-adaptive-recovery.png)
 
 *Figure 2. Real-robot recovery sequences on deformable, cluttered, outdoor, and payload-perturbed settings.*
 
@@ -64,7 +64,7 @@ Real-world tests use Unitree A1 and Go1 robots on sponge, irregular bumps, stack
 
 ## Key results
 
-![t-SNE visualization of latent representations from DreamRiser and the baseline.](/reviews/2026-07-22-DreamRiser-EN/fig3-latent-analysis.png)
+![t-SNE visualization of latent representations from DreamRiser and the baseline.](/reviews/2026-07-22-DreamRiser/fig3-latent-analysis.png)
 
 *Figure 3. t-SNE visualization of latent representations from DreamRiser and the baseline.*
 

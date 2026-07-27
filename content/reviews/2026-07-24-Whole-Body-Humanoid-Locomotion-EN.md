@@ -53,7 +53,7 @@ The paper asks how one generative model can compose whole-body skills online fro
 
 ## Methodology
 
-![Motion curation, independent generator/tracker pretraining, and closed-loop fine-tuning.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion-EN/fig1-framework.png)
+![Motion curation, independent generator/tracker pretraining, and closed-loop fine-tuning.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion/fig1-framework.png)
 
 *Figure 1. The system builds physically executable motion data, pretrains generation and tracking modules independently, then freezes the generator and fine-tunes the tracker in closed loop.*
 
@@ -73,19 +73,19 @@ Simulation uses Isaac Lab with 500 robots per quantitative condition and randomi
 
 ## Key results
 
-![Real-world high-box, hurdling, stair, local-navigation, and mixed-terrain results.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion-EN/fig2-real-results.png)
+![Real-world high-box, hurdling, stair, local-navigation, and mixed-terrain results.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion/fig2-real-results.png)
 
 *Figure 2. The Unitree G1 uses hands, knees, and coordinated whole-body motion to traverse a 75 cm box, repeated hurdles, and mixed terrain.*
 
 The physical G1 climbs a `75 cm` box and descends through straight motion, a 90° turn followed by a lateral jump, or corner transitions. It also traverses consecutive obstacles and stairs and switches motion styles within an unseen hurdle–stair–box sequence. In some trials, the fine-tuned tracker overrides a reference that is unsuitable for the current state and moves around the box, suggesting limited emergent local navigation.
 
-![Fixed-reference tracking versus online motion generation across obstacle geometries.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion-EN/fig3-generation-results.png)
+![Fixed-reference tracking versus online motion generation across obstacle geometries.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion/fig3-generation-results.png)
 
 *Figure 3. Online generation adapts motion timing and amplitude to obstacle scale and direction, substantially outperforming fixed-reference tracking.*
 
 For box climbing, hurdling, and stair ascent, mean success increases from `0.859`, `0.805`, and `0.845` with fixed-reference tracking to `0.987`, `0.990`, and `0.997` with online generation. At extreme geometries, an 80 cm box improves from `0.230` to `0.962`, a 25 cm stair from `0.114` to `0.986`, and a 55 cm hurdle from `0.348` to `0.920`.
 
-![Benefit of closed-loop RL fine-tuning with the generator frozen.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion-EN/fig4-finetuning-results.png)
+![Benefit of closed-loop RL fine-tuning with the generator frozen.](/reviews/2026-07-24-Whole-Body-Humanoid-Locomotion/fig4-finetuning-results.png)
 
 *Figure 4. Fine-tuning systematically improves box ascent/descent, hurdling, and stair ascent/descent, with larger gains on harder geometries.*
 

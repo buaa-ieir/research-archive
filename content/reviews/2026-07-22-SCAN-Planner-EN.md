@@ -44,7 +44,7 @@ Finite local maps also create dead ends during long-range route following when g
 
 ## Methodology
 
-![SCAN-Planner architecture: inputs, robot-centric 3D sliding map, and trajectory optimization.](/reviews/2026-07-22-SCAN-Planner-EN/fig1-system-architecture.png)
+![SCAN-Planner architecture: inputs, robot-centric 3D sliding map, and trajectory optimization.](/reviews/2026-07-22-SCAN-Planner/fig1-system-architecture.png)
 
 *Figure 1. SCAN-Planner architecture: inputs, robot-centric 3D sliding map, and trajectory optimization.*
 
@@ -54,7 +54,7 @@ When a trajectory segment collides, projected A* searches an interpolated ground
 
 ## Experimental setup
 
-![Real-world tests in clutter, an S-bend, unstructured terrain, and dynamic-obstacle settings.](/reviews/2026-07-22-SCAN-Planner-EN/fig3-real-world-navigation.png)
+![Real-world tests in clutter, an S-bend, unstructured terrain, and dynamic-obstacle settings.](/reviews/2026-07-22-SCAN-Planner/fig3-real-world-navigation.png)
 
 *Figure 2. Real-world tests in clutter, an S-bend, unstructured terrain, and dynamic-obstacle settings.*
 
@@ -64,7 +64,7 @@ Hardware experiments use Unitree Go2, Livox Mid-360, and Jetson Orin NX in clutt
 
 ## Key results
 
-![Planner trajectories in scenes containing 100, 300, and 500 obstacles.](/reviews/2026-07-22-SCAN-Planner-EN/fig2-dense-obstacle-results.png)
+![Planner trajectories in scenes containing 100, 300, and 500 obstacles.](/reviews/2026-07-22-SCAN-Planner/fig2-dense-obstacle-results.png)
 
 *Figure 3. Planner trajectories in scenes containing 100, 300, and 500 obstacles.*
 

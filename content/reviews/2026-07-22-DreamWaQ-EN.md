@@ -44,7 +44,7 @@ The paper introduces DreamWaQ, a proprioception-only quadrupedal locomotion fram
 
 ## Methodology
 
-![Overall DreamWaQ training and zero-shot sim-to-real framework.](/reviews/2026-07-22-DreamWaQ-EN/fig1-framework.png)
+![Overall DreamWaQ training and zero-shot sim-to-real framework.](/reviews/2026-07-22-DreamWaQ/fig1-framework.png)
 
 *Figure 1. Overall DreamWaQ training and zero-shot sim-to-real framework.*
 
@@ -54,7 +54,7 @@ CENet combines forward-backward dynamics representation learning with explicit v
 
 ## Experimental setup
 
-![Two long-distance outdoor routes and the challenging terrains encountered.](/reviews/2026-07-22-DreamWaQ-EN/fig3-outdoor-navigation.png)
+![Two long-distance outdoor routes and the challenging terrains encountered.](/reviews/2026-07-22-DreamWaQ/fig3-outdoor-navigation.png)
 
 *Figure 2. Two long-distance outdoor routes and the challenging terrains encountered.*
 
@@ -64,7 +64,7 @@ Real-world experiments use a Unitree A1 on yards, stairs, wet slopes, vegetation
 
 ## Key results
 
-![Learning curves across methods; AdaBoot improves training stability and final return.](/reviews/2026-07-22-DreamWaQ-EN/fig2-learning-curves.png)
+![Learning curves across methods; AdaBoot improves training stability and final return.](/reviews/2026-07-22-DreamWaQ/fig2-learning-curves.png)
 
 *Figure 3. Learning curves across methods; AdaBoot improves training stability and final return.*
 

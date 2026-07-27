@@ -52,7 +52,7 @@ The paper asks how minimal motion data can support whole-body contact skills acr
 
 ## Methodology
 
-![LadderMan pipeline from a single reference to a unified visual policy.](/reviews/2026-07-24-LadderMan-EN/fig1-framework.png)
+![LadderMan pipeline from a single reference to a unified visual policy.](/reviews/2026-07-24-LadderMan/fig1-framework.png)
 
 *Figure 1. One motion produces multiple privileged experts, which are distilled through hybrid DAgger and RL into a unified depth policy for real deployment.*
 
@@ -60,7 +60,7 @@ The reference is captured with OptiTrack on a ladder inclined at `65.5°` with `
 
 The unified policy observes a 60×80 depth image, proprioceptive history, and a binary up/down command. Hybrid DAgger + RL jointly optimizes a PPO objective and a KL imitation term toward the expert, then reduces the KL weight over training. The student therefore begins by copying experts but can later learn recovery in states not covered by demonstrations.
 
-![Rung-focused alignment between simulation and real depth.](/reviews/2026-07-24-LadderMan-EN/fig2-depth-alignment.png)
+![Rung-focused alignment between simulation and real depth.](/reviews/2026-07-24-LadderMan/fig2-depth-alignment.png)
 
 *Figure 2. Simulation uses rung-focused masking and lightweight noise, while real deployment uses foundation-model stereo depth to recover continuous rung geometry.*
 
@@ -76,13 +76,13 @@ Simulation evaluates the Cartesian product of inclinations `{55°, 60°, 65°, 7
 
 ## Key results
 
-![Ascent, descent, and on-ladder manipulation on three physical ladders.](/reviews/2026-07-24-LadderMan-EN/fig3-real-tasks.png)
+![Ascent, descent, and on-ladder manipulation on three physical ladders.](/reviews/2026-07-24-LadderMan/fig3-real-tasks.png)
 
 *Figure 3. LadderMan climbs structurally different ladders and performs multiple upper-body tasks while supported on the ladder.*
 
 On the reference ladder, three rungs of ascent and descent take approximately `19.3 s`, compared with `18.2 s` for a human subject. In the main simulated region—24–28 cm spacing and 55°–65° inclination—the unified visual policy exceeds `95%` success; the mean over extreme boundary configurations remains about `57%`. A blind tracking baseline peaks at roughly `49%` near the reference geometry and approaches zero across most shifted configurations.
 
-![Ablations of expert training and real-world sim-to-real components.](/reviews/2026-07-24-LadderMan-EN/fig4-ablations.png)
+![Ablations of expert training and real-world sim-to-real components.](/reviews/2026-07-24-LadderMan/fig4-ablations.png)
 
 *Figure 4. Contact-aware expert learning and all visual transfer components are necessary for robust deployment.*
 

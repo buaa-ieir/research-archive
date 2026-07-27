@@ -45,7 +45,7 @@ The paper asks how quadruped reinforcement-learning control can be extended to a
 
 ## Methodology
 
-![Navigation stack integrating localization, planning, RL locomotion, and learned odometry.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation-EN/fig1-system-architecture.png)
+![Navigation stack integrating localization, planning, RL locomotion, and learned odometry.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation/fig1-system-architecture.png)
 
 *Figure 1. Navigation stack integrating localization, planning, RL locomotion, and learned odometry.*
 
@@ -55,7 +55,7 @@ The flat policy is shaped to produce periodic foot lifting, returning hip joints
 
 ## Experimental setup
 
-![Traversal sequences for a 24 cm single step and 13 cm staircase.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation-EN/fig2-stair-traversal.png)
+![Traversal sequences for a 24 cm single step and 13 cm staircase.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation/fig2-stair-traversal.png)
 
 *Figure 2. Traversal sequences for a 24 cm single step and 13 cm staircase.*
 
@@ -65,11 +65,11 @@ The manufacturer controller and proposed flat policy are also compared through j
 
 ## Key results
 
-![Approximately 2.8 km Tsukuba Challenge route and key traversal segments.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation-EN/fig3-navigation-route.png)
+![Approximately 2.8 km Tsukuba Challenge route and key traversal segments.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation/fig3-navigation-route.png)
 
 *Figure 3. Approximately 2.8 km Tsukuba Challenge route and key traversal segments.*
 
-![Joint-motor temperature curves for the manufacturer baseline and the proposed flat-terrain policy.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation-EN/fig4-thermal-results.png)
+![Joint-motor temperature curves for the manufacturer baseline and the proposed flat-terrain policy.](/reviews/2026-07-22-Go2-W-Long-Distance-Navigation/fig4-thermal-results.png)
 
 *Figure 4. Joint-motor temperature curves for the manufacturer baseline and the proposed flat-terrain policy.*
 

@@ -46,7 +46,7 @@ Directly solving a large nonlinear optimal-control problem for every new target 
 
 ## Methodology
 
-![Integration of DifferentiableCollisions with the FROST optimal-control pipeline.](/reviews/2026-07-23-TOCALib-EN/fig1-framework.png)
+![Integration of DifferentiableCollisions with the FROST optimal-control pipeline.](/reviews/2026-07-23-TOCALib/fig1-framework.png)
 
 *Figure 1. Integration of DifferentiableCollisions with the FROST optimal-control pipeline.*
 
@@ -56,7 +56,7 @@ Optimized state and control trajectories are stored as fifth-order Bézier coeff
 
 ## Experimental setup
 
-![Spherical-obstacle avoidance on the physical Mobile ALOHA platform.](/reviews/2026-07-23-TOCALib-EN/fig2-real-robot-avoidance.png)
+![Spherical-obstacle avoidance on the physical Mobile ALOHA platform.](/reviews/2026-07-23-TOCALib/fig2-real-robot-avoidance.png)
 
 *Figure 2. Spherical-obstacle avoidance on the physical Mobile ALOHA platform.*
 
@@ -66,13 +66,13 @@ Scenes include a static sphere, a sphere following a predefined trajectory, a sh
 
 ## Key results
 
-![Manipulator avoidance of a sphere with a known motion trajectory.](/reviews/2026-07-23-TOCALib-EN/fig3-moving-obstacle.png)
+![Manipulator avoidance of a sphere with a known motion trajectory.](/reviews/2026-07-23-TOCALib/fig3-moving-obstacle.png)
 
 *Figure 3. Manipulator avoidance of a sphere with a known motion trajectory.*
 
 With DCOL enabled, the manipulator avoids both static and moving spheres; without collision constraints, the optimized path intersects the obstacle. The moving-obstacle result assumes known geometry and motion and does not include online perception, tracking, or prediction.
 
-![Collision-free bimanual trajectories and self-collision avoidance in a shelf scene.](/reviews/2026-07-23-TOCALib-EN/fig4-shelf-trajectories.png)
+![Collision-free bimanual trajectories and self-collision avoidance in a shelf scene.](/reviews/2026-07-23-TOCALib/fig4-shelf-trajectories.png)
 
 *Figure 4. Collision-free bimanual trajectories and self-collision avoidance in a shelf scene.*
 

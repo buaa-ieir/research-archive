@@ -48,13 +48,13 @@ General-purpose VLAs also lack explicit stopping and progress estimation, making
 
 ## Methodology
 
-![CycleVLA proactive self-correction framework.](/reviews/2026-07-24-CycleVLA-EN/fig1-framework.png)
+![CycleVLA proactive self-correction framework.](/reviews/2026-07-24-CycleVLA/fig1-framework.png)
 
 *Figure 1. CycleVLA combines progress-aware VLA finetuning, progress-triggered VLM failure prediction and backtracking, and MBR ranking after recovery.*
 
 CycleVLA implements a progress-awareness–failure-prediction–backtracking loop. Its central observation is that many manipulation failures occur near subtask transitions, where near-completion progress provides an early warning signal.
 
-![Pipeline for constructing the subtask-decomposed dataset.](/reviews/2026-07-24-CycleVLA-EN/fig2-subtask-dataset.png)
+![Pipeline for constructing the subtask-decomposed dataset.](/reviews/2026-07-24-CycleVLA/fig2-subtask-dataset.png)
 
 *Figure 2. LLM subtask decomposition is aligned with proprioceptive motion primitives and gripper-state segments to infer temporal boundaries.*
 
@@ -68,7 +68,7 @@ After backtracking, the diffusion action expert samples \(N\) action-chunk hypot
 
 Evaluation uses LIBERO-Spatial, Object, Goal, and Long, each containing ten tasks, with 50 rollouts and three random seeds per setting. The backbone is OpenVLA with a diffusion action expert. GPT-4.1 decomposes subtasks, GPT-5.2 predicts failures and plans recovery, and MBR uses trajectory-level L2 distance.
 
-![Examples of temporally aligned subtask trajectories from LIBERO.](/reviews/2026-07-24-CycleVLA-EN/fig4-decomposed-trajectories.png)
+![Examples of temporally aligned subtask trajectories from LIBERO.](/reviews/2026-07-24-CycleVLA/fig4-decomposed-trajectories.png)
 
 *Figure 3. Subtask boundaries, action phases, and temporal alignment across representative LIBERO suites.*
 
@@ -78,7 +78,7 @@ A single model is jointly finetuned on all four suites, which is more demanding 
 
 CycleVLA reaches `95.3%` average success on LIBERO and `93.6%` on LIBERO-Long, compared with `53.7%` for OpenVLA on the latter. The larger gain on long-horizon tasks supports the premise that early intervention prevents local errors from propagating across subtasks.
 
-![Qualitative failure prediction, backtracking, and retry examples.](/reviews/2026-07-24-CycleVLA-EN/fig3-recovery-examples.png)
+![Qualitative failure prediction, backtracking, and retry examples.](/reviews/2026-07-24-CycleVLA/fig3-recovery-examples.png)
 
 *Figure 4. CycleVLA can execute multiple prediction–backtracking–retry cycles within one long-horizon episode and eventually complete the task.*
 

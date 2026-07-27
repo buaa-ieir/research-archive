@@ -45,7 +45,7 @@ The paper asks how exploration and convergence can be balanced while coordinatin
 
 ## Methodology
 
-![Asymmetric-PPO training framework for wheeled-legged recovery.](/reviews/2026-07-22-Learning-to-Recover-EN/fig1-training-framework.png)
+![Asymmetric-PPO training framework for wheeled-legged recovery.](/reviews/2026-07-22-Learning-to-Recover/fig1-training-framework.png)
 
 *Figure 1. Asymmetric-PPO training framework for wheeled-legged recovery.*
 
@@ -55,7 +55,7 @@ ED changes the reward composition over an episode: early steps prioritize broad 
 
 ## Experimental setup
 
-![Autonomous repeated recovery under consecutive manual perturbations.](/reviews/2026-07-22-Learning-to-Recover-EN/fig3-repeated-perturbation-recovery.png)
+![Autonomous repeated recovery under consecutive manual perturbations.](/reviews/2026-07-22-Learning-to-Recover/fig3-repeated-perturbation-recovery.png)
 
 *Figure 2. Autonomous repeated recovery under consecutive manual perturbations.*
 
@@ -65,7 +65,7 @@ Hardware experiments use KYON and Unitree Go2-W, including repeated external per
 
 ## Key results
 
-![Average joint-torque comparison between wheel-active and wheel-fixed configurations.](/reviews/2026-07-22-Learning-to-Recover-EN/fig2-joint-torque-results.png)
+![Average joint-torque comparison between wheel-active and wheel-fixed configurations.](/reviews/2026-07-22-Learning-to-Recover/fig2-joint-torque-results.png)
 
 *Figure 3. Average joint-torque comparison between wheel-active and wheel-fixed configurations.*
 

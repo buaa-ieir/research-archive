@@ -68,6 +68,12 @@ The paper reports nearly 1,000 physical grasp trials. Across seven robotic hands
 
 *Figure 5. The shared contact interface further enables multi-hand collaborative sorting.*
 
+## Evidence quality and academic assessment
+
+SpaHybGen provides one of the strongest empirical packages in this batch. The evaluation is not restricted to simulation grasp metrics: it includes nearly **1,000 physical grasp trials across seven robotic hands** in isolated and semi-cluttered scenes. Each hand typically needs only 51–53 attempts to complete 50 successful grasps, corresponding to **94.3%–98.0% success**. Relative to deployment-feasible baselines such as AdaGrasp and HybridGen, SpaHybGen improves grasp success by roughly 10–20 percentage points while supporting more complex anthropomorphic hands. The paper further evaluates **20 Hz dynamic grasp refinement over 1,172 trials** and multi-hand collaborative sorting.
+
+The academically important result is not just the high success rate but the mechanistic link between **cross-hardware zero-shot transfer and representation decoupling**. The perception network predicts hand-agnostic contact certainty, orientation, and centroid fields, while embodiment-specific kinematics and geometry enter only in differentiable optimization. This gives a plausible explanation for why hardware can change without retraining perception. The boundary of the claim should remain clear: the system still assumes usable rigid-hand models, kinematic parameters, and engineered optimization objectives, so it is not morphology-free end-to-end generalization. Evidence for soft hands, underactuated hands, dynamic contact, and post-grasp manipulation remains limited.
+
 ## Strengths
 
 - Targets a fundamental issue in manipulation: perception robustness versus hardware transfer;

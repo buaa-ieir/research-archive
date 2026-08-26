@@ -65,6 +65,12 @@ In the user study with 14 participants, AFT-Handover significantly reduces regra
 
 *Figure 4. The legged manipulator receives the task, grasps the object, approaches the human, detects the hand, and executes the handover.*
 
+## Evidence quality and academic assessment
+
+AFT-Handover is evaluated progressively from module-level transfer to human-facing system deployment. Task-conditioned reasoning alone improves robot-grasp suitability by about **15–20%**. The full method reaches about **83% average success with GPT-4o** and **86% with GPT-5** over the tested object-task pairs. When ground-truth affordances remove LLM reasoning errors, performance rises to roughly **95%**, which is an informative upper-bound experiment: it separates semantic/part-matching failures from the geometric transfer mechanism itself.
+
+The human-subject evidence is also comparatively strong. Fourteen participants compare AFT-Handover against LLM-Handover in a paired study. AFT-Handover significantly reduces regrasping (Wilcoxon p=0.027; McNemar p=0.035), is preferred on significantly more object-task pairs (p=0.015), and is selected overall by **71.43%** of participants. The paper then demonstrates five task-oriented handovers on an ANYmal-based legged manipulator. The boundary of the evidence is important: the legged evaluation is primarily qualitative, hand detection is single-shot rather than continuously reactive, and unconventional tool use can still cause LLM part-matching errors. Thus, “zero-shot generalization” is convincing for conventional functional semantics but remains brittle for atypical object use.
+
 ## Strengths
 
 - Realistic problem framing: handover quality depends on what the human will do next;

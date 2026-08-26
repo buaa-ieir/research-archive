@@ -70,6 +70,12 @@ The paper validates the system from component-level characterization to integrat
 
 *Figure 5. The integrated system demonstrates strawberry detection, grasping, rotational harvesting, and release.*
 
+## Evidence quality and academic assessment
+
+The evidence spans **mechanical design, sensor characterization, integrated system capability, and real harvesting demonstrations**. The five-finger gripper integrates 13 sensors: one camera, five tactile sensors, five curvature sensors, a pressure sensor, and a ToF sensor. It actuates in about 2 s at 80 kPa, produces up to roughly 6 N pulling force, lifts 1 kg, and expands its workspace from about 200 mm² to 14,000 mm². In the reported vision tests, the system reaches **100% shape-classification accuracy** with size-measurement error below **1.8%**. The optical-fiber tactile sensors distinguish material stiffness, while curvature sensing captures load changes and slip events.
+
+These results support the claim that colocated multimodal sensing improves observability of fruit state, but it is important to separate **sensor-level validation** from a fully learned, closed-loop autonomous harvesting policy. The robot arm is driven through taught waypoints and ROS scripts, and the vision/touch/curvature signals are largely invoked through a predefined sequential procedure. The paper therefore demonstrates an integrated sensing-manipulation platform rather than proving that a learned fusion policy optimally combines modalities online. Greenhouse strawberry harvesting and ripeness demonstrations are valuable, but outdoor illumination, foliage occlusion, stem variability, long-term sensor drift, and large-scale harvesting throughput remain open evaluation dimensions.
+
 ## Strengths
 
 - Highly integrated sensing without relying on bulky external perception;

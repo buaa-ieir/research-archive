@@ -72,6 +72,12 @@ The user study involves 12 participants performing spatial targeting with three 
 
 *Figure 5. The study compares the three control modes across subjective interaction measures.*
 
+## Evidence quality and academic assessment
+
+The paper combines **engineering feasibility tests, quantitative system characterization, and a user study**, rather than relying on demonstrations alone. The technical evaluation reports ground-plane speed, reel speed and load trade-offs, maximum height, assembly/disassembly performance, and achievable orientation control. For example, the 24-inch cubic Mylar HIB reached an estimated/observed maximum height of about 114.62 m in the tested configuration; the rover moved at roughly 0.415 m/s forward/backward and 0.269 m/s laterally; and the motor study exposes a concrete speed-versus-torque trade-off. Assembly experiments compare double-sided tape, magnetic, and Velcro joints at two heights with repeated trials.
+
+The user study includes 12 participants performing repeated 3D targeting tasks with all three interaction modes and rating comfort, intuitiveness, and enjoyment. Nearby Gesture Control scores highest on comfort and enjoyment, while Via-String Tangible Control scores highest on intuitiveness; average targeting times are roughly 20–25 s. These findings should be interpreted as exploratory HCI evidence rather than population-level claims because of the small sample and prototype-specific interaction constraints. The more durable contribution is the **design space and system paradigm**. Importantly, the paper also documents inertia and oscillation, roughly 5 g payload per HIB, string entanglement, floor clutter, dependence on external tracking, and helium sustainability as substantive limitations.
+
 ## Strengths
 
 - Clever physical design that uses buoyancy to reduce active hovering cost;

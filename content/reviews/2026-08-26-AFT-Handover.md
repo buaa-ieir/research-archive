@@ -65,6 +65,12 @@ AFT-Handover 包括三个关键步骤。第一，给定目标对象和后续任�
 
 *图 4. 腿式移动操作机器人从接收任务、抓取物体、寻找人到执行递交的完整过程。*
 
+## 证据质量与学术评价
+
+AFT-Handover 的实验从模块到系统逐层验证。任务条件知识本身带来约 **15–20%** 的机器人抓取成功率提升；完整 AFT-Handover 在测试 object-task pairs 上使用 GPT-4o 时平均成功率约 **83%**，使用 GPT-5 时约 **86%**。当以 ground-truth affordance 替代 LLM 推理误差时，系统上限可达约 **95%**，这一区分非常有价值，因为它说明当前主要剩余误差来自语义推理与部件匹配，而不是 affordance transfer 本身。
+
+人因证据也比较完整：14 名参与者在配对设计下比较 AFT-Handover 与 LLM-Handover。AFT-Handover 显著减少 regrasp（Wilcoxon p=0.027；McNemar p=0.035），在更多 object-task pair 上被偏好（p=0.015），总体有 **71.43%** 参与者选择 AFT-Handover。论文随后在 ANYmal + 6-DoF 机械臂上验证五类真实递交任务。需要谨慎的是，腿式平台实验主要是定性系统验证，且 hand detection 为 single-shot；机器人没有针对人手连续运动进行实时闭环调整。对 unconventional tool use，LLM 仍可能产生功能部件错配，因此“零样本泛化”应理解为对常规功能语义较强、对非典型使用仍脆弱。
+
 ## 优点
 
 - 问题设置贴近真实人机协作：递交质量取决于后续任务；

@@ -98,6 +98,12 @@ This makes the paper useful not just as a literature index but also as a technol
 
 The survey centers future challenges on **generalization** and **safety**. Generalization requires larger and more diverse data, lifelong learning, cross-embodiment alignment, and more meaningful zero-shot transfer. Safety requires handling language ambiguity, real-time constraints, failure recovery, and verifiable physical constraints. A key conclusion is that language is naturally strong at specifying *what* to do and logical constraints, while images and videos can specify *how* to do it geometrically and dynamically; hybrid task specification may therefore be more robust than language alone.
 
+## Review methodology and critical assessment
+
+The paper’s primary contribution is not a new model but a **functional taxonomy organized by the role language plays inside the manipulation control loop**. It divides the literature into language for state evaluation, language as a policy condition, language for cognitive planning/reasoning, and unified VLA models, then compares methods along five orthogonal axes: action granularity, data/supervision regime, system cost and latency, environment/evaluation, and task specification. This is more useful for system design than a taxonomy based only on whether a paper uses an LLM, VLM, or VLA, because it directly describes how language changes information flow through perception, planning, and control.
+
+The survey is also appropriately cautious about major open debates: whether VLA scaling alone is the right path, whether world models provide a better intermediate abstraction, and whether structure-aware hybrid systems are more realistic under finite robot data. Its discussion of generalization is nuanced: zero-shot capability is strongest at semantic interpretation and high-level planning, more fragile at policy transfer, and still limited for contact-rich, long-horizon, dynamic, and cross-embodiment physical execution. Safety is organized around language ambiguity, failure recovery, and real-time performance. A methodological caveat is that this is best understood as a **narrative/taxonomic survey rather than a PRISMA-style systematic review with explicit search, inclusion/exclusion, and meta-analytic protocols**. It is therefore excellent for structuring the field and identifying research questions, but its coverage and trend claims should not be interpreted as exhaustive statistical evidence.
+
 ## Strengths
 
 - Functional taxonomy is clearer than model-name-based organization;
